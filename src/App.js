@@ -1,34 +1,21 @@
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+import ItemListContainer from './components/ItemList/ItemListContainer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ItemDetailContainer from './components/ItemDetails/ItemDetailContainer';
 
 
 function App() {
-  return (
-    
-    <>
-      <NavBar></NavBar>
-      <ItemListContainer greeting={"hola cabros"}></ItemListContainer>
-    </>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <NavBar></NavBar>
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
+  return (  
+    <BrowserRouter>
+      <NavBar/>
+      <Routes>
+        <Route path='/' element={<ItemListContainer greeting={"hola cabros"}/>}/>
+        <Route path='/category/:categoryName' element={<ItemListContainer greeting={"hola cabros"}/>} />
+        <Route path='/item/:id' element={<ItemDetailContainer/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
