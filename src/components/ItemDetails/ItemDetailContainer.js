@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
-import { useParams } from 'react-router-dom';
+import { Button, Container } from "react-bootstrap";
+import { Link, useParams } from 'react-router-dom';
 import { getProduct } from "../../utils/products";
 import Item from "../ItemList/Item";
 
@@ -21,6 +21,9 @@ const ItemDetailContainer = () => {
     <Container>
       <h1>Detalle del Producto</h1>
       {product && <Item product={product}/>}
+      <Link to='/'>
+        <Button>Volver</Button>
+      </Link>
     </Container>    
   );
 }
