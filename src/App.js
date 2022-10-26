@@ -1,22 +1,29 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import NavBar from './components/NavBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/ItemList/ItemListContainer';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import ItemDetailContainer from './components/ItemDetails/ItemDetailContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Cart from './components/Cart/Cart';
+import Checkout from './components/Checkout';
+import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
+import { CartProvider } from './contexts/CartContext';
 
 
 function App() {
-  return (  
-    <BrowserRouter>
-      <NavBar/>
-      <Routes>
-        <Route path='/' element={<ItemListContainer greeting={"hola cabros"}/>}/>
-        <Route path='/category/:categoryName' element={<ItemListContainer greeting={"hola cabros"}/>} />
-        <Route path='/item/:id' element={<ItemDetailContainer/>} />
-      </Routes>
-    </BrowserRouter>
-  );
+    return (
+      <BrowserRouter basename='/'>
+        <CartProvider>
+          <NavBar />
+            <Routes>
+              <Route path='/' element={<ItemListContainer greeting={'All Products'} />} />
+              <Route path='/category/:categoryId' element={<ItemListContainer greeting={`Sort by decade`} />} />
+              <Route path='/item/:id' element={<ItemDetailContainer />} />
+              <Route path='/cart' element={<Cart />} />
+              <Route path='/checkout' element={<Checkout />} />
+            </Routes>
+        </CartProvider>
+      </BrowserRouter>
+    );
 }
 
 export default App;
