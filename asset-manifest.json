@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ProyectoReactJS/static/css/main.66fee8d8.css",
-    "main.js": "/ProyectoReactJS/static/js/main.178b0b85.js",
-    "static/js/787.591a5397.chunk.js": "/ProyectoReactJS/static/js/787.591a5397.chunk.js",
-    "static/media/logo.png": "/ProyectoReactJS/static/media/logo.2a525a4ec220990ce4d7.png",
-    "index.html": "/ProyectoReactJS/index.html",
-    "main.66fee8d8.css.map": "/ProyectoReactJS/static/css/main.66fee8d8.css.map",
-    "main.178b0b85.js.map": "/ProyectoReactJS/static/js/main.178b0b85.js.map",
-    "787.591a5397.chunk.js.map": "/ProyectoReactJS/static/js/787.591a5397.chunk.js.map"
+    "main.css": "/Proyecto_ReactJS/static/css/main.66fee8d8.css",
+    "main.js": "/Proyecto_ReactJS/static/js/main.17b34da0.js",
+    "static/js/787.591a5397.chunk.js": "/Proyecto_ReactJS/static/js/787.591a5397.chunk.js",
+    "static/media/logo.png": "/Proyecto_ReactJS/static/media/logo.2a525a4ec220990ce4d7.png",
+    "index.html": "/Proyecto_ReactJS/index.html",
+    "main.66fee8d8.css.map": "/Proyecto_ReactJS/static/css/main.66fee8d8.css.map",
+    "main.17b34da0.js.map": "/Proyecto_ReactJS/static/js/main.17b34da0.js.map",
+    "787.591a5397.chunk.js.map": "/Proyecto_ReactJS/static/js/787.591a5397.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.66fee8d8.css",
-    "static/js/main.178b0b85.js"
+    "static/js/main.17b34da0.js"
   ]
 }
