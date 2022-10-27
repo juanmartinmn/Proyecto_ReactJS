@@ -7,4 +7,19 @@
 
 .itemCountContainer div {
   display: flex;
+  margin: 5px;
+}
+
+.itemCountContainer button{
+  margin: 5px;
+}
+
+.itemCounter{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.itemCounter h5{
+  margin: 10px;
 }

@@ -1,3 +1,17 @@
 .item{
     margin: 5px;
 }
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf2e9 ;
+}
+
+.card-title{
+    height: 75px;
+    display: flex;
+    align-items: center;
+}

@@ -8,7 +8,6 @@ import Checkout from './components/Checkout';
 import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 import { CartProvider } from './contexts/CartContext';
 
-
 function App() {
     return (
       <BrowserRouter basename='/'>

@@ -1,14 +1,19 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget/CartWidget";
+import logo from '../images/logo.png'
 
 
 const NavBar = () => {
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar bg="light" variant="light">
       <Container>
         <Navbar.Brand as={Link} to='/'>
-          The Record Shop
+          <img
+              src={logo}
+              height="40"
+              className="d-inline-block align-top"
+          />
         </Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link as={Link} to='/'>

@@ -21,18 +21,18 @@ const ItemCount = ({ initial, stock, onAdd }) => {
 
   return (
     <div className='itemCountContainer'>
-        <div>
-          <Button variant="danger" disabled={count <= 1} onClick={handleSubtract}>
+        <div className='itemCounter'>
+          <Button variant="outline-success" disabled={count <= 1} onClick={handleSubtract}>
             -
           </Button>
           <h5>{count}</h5>
-          <Button variant="success" disabled={count >= stock} onClick={handleAdd}>
+          <Button variant="outline-success" disabled={count >= stock} onClick={handleAdd}>
             +
           </Button>
         </div>
       <div>
-      <Button variant="primary" disabled={stock <= 0} onClick={handleClick}>
-        Agregar al  Carrito
+      <Button variant="outline-success" disabled={stock <= 0} onClick={handleClick}>
+        Add to Cart
       </Button>
       </div>
     </div>

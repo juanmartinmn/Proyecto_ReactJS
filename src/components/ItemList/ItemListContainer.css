@@ -1,3 +1,12 @@
 .greeting {
-    color: green;
+    text-align: center;
+    margin: 10px;
+    color: #1a6947 ;
+}
+
+.itemList{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }

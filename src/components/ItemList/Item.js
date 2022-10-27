@@ -5,7 +5,7 @@ import './Item.css'
 
 const Item = ({ product }) => {
   return (
-    <Card className='item' style={{ width: '18rem' }}>
+    <Card className='item' style={{ width: '17rem' }}>
       <Card.Img variant="top" src={product.pictureUrl} />
       <Card.Body>
         <Card.Title>{product.title}</Card.Title>
@@ -16,7 +16,7 @@ const Item = ({ product }) => {
           {product.description}
         </Card.Text>
           <Link to={`/item/${product.id}`}>
-            <Button variant="primary">
+            <Button variant="outline-success">
               View
             </Button>
           </Link>

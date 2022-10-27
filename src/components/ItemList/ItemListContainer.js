@@ -22,9 +22,9 @@ const ItemListContainer = ({ greeting }) => {
   }, [categoryId])
 
   return (
-    <Container>
+    <Container className='itemListContainer'>
       <h3 className="greeting">{greeting}</h3>
-      <ItemList products={products} />
+      <ItemList className='itemList' products={products} />
     </Container>
   );
 }
