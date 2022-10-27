@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 const Checkout = () => {
   return (
     <Container>
-      <h1>Resumen de su compra</h1>
+      <h1>Purchase Details</h1>
     </Container>
   );
 }

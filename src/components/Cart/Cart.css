@@ -1,4 +1,15 @@
+h1{
+  color: #1a6947;
+}
+
 .cartContainer svg {
-  color: red;
+  color: black;
   cursor: pointer;
 }
+
+.cartContainer{
+  text-align: center;
+}
+
+
+

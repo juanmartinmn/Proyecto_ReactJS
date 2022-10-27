@@ -13,7 +13,7 @@ const CartWidget = () => {
         <AiOutlineShoppingCart />
       </Link>
       {totalQuantity > 0 && (
-        <Badge pill bg="danger">{totalQuantity}</Badge>
+        <Badge pill bg="dark">{totalQuantity}</Badge>
       )}
     </>
   );

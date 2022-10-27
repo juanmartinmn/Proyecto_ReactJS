@@ -2,11 +2,12 @@ import './App.css';
 import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/ItemList/ItemListContainer';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cart from './components/Cart/Cart';
 import Checkout from './components/Checkout';
 import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 import { CartProvider } from './contexts/CartContext';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
     return (

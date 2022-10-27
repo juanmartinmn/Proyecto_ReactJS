@@ -23,11 +23,11 @@ const ItemCount = ({ initial, stock, onAdd }) => {
     <div className='itemCountContainer'>
         <div className='itemCounter'>
           <Button variant="outline-success" disabled={count <= 1} onClick={handleSubtract}>
-            -
+            <b>-</b>
           </Button>
           <h5>{count}</h5>
           <Button variant="outline-success" disabled={count >= stock} onClick={handleAdd}>
-            +
+            <b>+</b>
           </Button>
         </div>
       <div>

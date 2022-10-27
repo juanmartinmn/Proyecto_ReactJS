@@ -4,7 +4,6 @@ import Card from 'react-bootstrap/Card';
 import { Link } from "react-router-dom";
 import CartContext from "../../contexts/CartContext";
 import ItemCount from "../ItemCount/ItemCount";
-import Item from "../ItemList/Item"
 import './ItemDetail.css'; 
 
 
@@ -29,7 +28,7 @@ const ItemDetail = ({ product }) => {
           <Card.Body>
             <Card.Title>{product.title}</Card.Title>
             <Card.Text>
-              $ {product.price}
+                ${product.price}
             </Card.Text>
             <Card.Text>
               {product.description}
@@ -42,7 +41,7 @@ const ItemDetail = ({ product }) => {
             {!showItemCount && (
                 <Link to='/cart'>
                   <Button variant="success">
-                      Ir al Carrito
+                      Go to Cart
                   </Button>
                 </Link>
             )}

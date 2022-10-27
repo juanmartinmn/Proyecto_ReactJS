@@ -1,3 +1,4 @@
 .footerOrderSuccess {
+  display: flex;
   flex-direction: column;
 }
